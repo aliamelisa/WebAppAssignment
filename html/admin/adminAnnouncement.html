@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make an announcement</title>
+    <link rel="stylesheet" href="../../css/adminAnnouncement.css">
+    <script src="../../js/adminAnnouncement.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Final Year Project Management</h1>
+        <form action="search.php" method="GET" class="search">
+            <input type="text" name="query" placeholder="Search...">
+            <button type="submit">Search</button>
+        </form>
+  
+        <div class="user-actions">
+            <img src="../../images/43b74cb1-5929-4f9e-a664-3b2fcb848fea.png" alt="User Icon" title="User">
+            <span>Hi, Username!</span>
+        </div>
+    </header>
+  
+    <nav>
+      <a href="adminMain.php">Home</a>
+      <a href="https://clic.mmu.edu.my">CLIC</a>
+      <a href="https://ebwise.mmu.edu.my">eBwise</a>
+    </nav>
+  
+    <div id="title">
+        <h1>Make an Announcement</h1>
+    </div>
+
+    <div class="rectangle">
+        <form action="insertAnnouncement.php" name="announcementForm" id="announcementForm" method="post">    
+        <div id="announcementFields">
+            <div class="announceTitle">
+                <h2><label for="">Title</label></h2>
+                <input type="text" placeholder="Insert title" title="Announcement title" name="announceTitle"required>
+            </div>
+            
+            <div>
+                <h2><label for="">Announce to</label></h2>
+                <select name="target" id="target" title="Target announcement">
+                    <option value="admin">Admins</option>
+                    <option value="lecturer">Lecturers</option>
+                    <option value="student">Students</option>
+                    <option value="all">All</option>
+                </select>
+            </div>
+
+            <div>
+                <h2><label for="">Announcement from</label></h2>
+                <select name="from" id="from">
+                    <option value="security">Security</option>
+                    <option value="fmd">FMD</option>
+                    <option value="nice">NICE</option>
+                    <option value="registrar">Academic Registrar</option>
+                    <option value="oshe">OSHE</option>
+                    <option value="foe">Faculty of Engineering</option>
+                    <option value="fci">Faculty of Computing & Informatics</option>
+                    <option value="fom">Faculty of Management</option>
+                    <option value="fcm">Faculty of Creative Multimedia</option>
+                    <option value="fol">Faculty of Law</option>
+                </select>
+            </div>
+
+            <div>
+                <h2><label for="">Announcement</label></h2>
+                <textarea id="announcement" name="announcement" rows="4" cols="50" placeholder="Make an announcement." title="Type announcement here" required></textarea>
+            </div>
+
+            <div class="button">
+                <button title="Reset announcement" type="reset">Reset</button>
+                <button title="Post announcement" type="submit">Submit</button>
+            </div>
+        </div>
+    </div>
+    </form>
+    <footer>© 2024 FCI FYP Management System. All rights reserved.</footer>
+</body>
+</html>
