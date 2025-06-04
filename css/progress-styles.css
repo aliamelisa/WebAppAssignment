@@ -1,0 +1,214 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+header {
+    background-color: #800000;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.user-actions img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.user-actions span {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto;
+}
+
+.search input[type="text"] {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    width: 300px;
+}
+
+.search button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #800000;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.search button:hover {
+    background-color: #660000;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 0.5rem;
+}
+
+nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    margin: 1rem 0;
+    overflow: hidden;
+    height: 25px;
+    position: relative;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.progress {
+    background-color: #800000;
+    height: 100%;
+    color: white;
+    text-align: center;
+    line-height: 25px;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 10px 0 0 10px;
+    transition: width 0.4s ease;
+}
+
+.progress-form {
+    max-width: 500px;
+    margin: 2rem auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.progress-form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.progress-form input,
+.progress-form select,
+.progress-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    background: #fdfdfd;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.progress-form input:focus,
+.progress-form select:focus,
+.progress-form textarea:focus {
+    border-color: #800000;
+    box-shadow: 0 0 4px #800000;
+    outline: none;
+}
+
+.progress-form button {
+    width: 100%;
+    background-color: #800000;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.progress-form button:hover {
+    background-color: #800000;
+}
+
+.milestone-box {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1rem auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+    text-align: left;
+}
+
+.milestone-box:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    background-color: #f9f9f9;
+}
+
+.milestone-box h4 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.milestone-box p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.milestone-box em {
+    font-weight: bold;
+    color: #800000;
+}
+
+footer {
+    background-color: #454543;
+    color: white;
+    padding: 0.15rem;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

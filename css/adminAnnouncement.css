@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color:#800000;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto;
+}
+
+.search input[type="text"] {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    width: 300px;
+}
+
+.search button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #800000;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.search button:hover {
+    background-color: #660000;
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.user-actions img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.user-actions span {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 0.5rem;
+}
+
+nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+  
+.rectangle{
+    background-color: #800000;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin:  auto;
+    margin-bottom: 100px;
+    padding: 50px 50px 75px 50px;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.5); 
+    color:white ;
+    width: 50%;
+}
+
+#announcement{
+    border-radius: 10px;
+    width: 500px;
+    height: 20%;
+}
+
+input{
+    border-radius: 10px;
+    width: 500px;
+    height: 25px;
+}
+
+select{
+    border-radius: 10px;
+}
+
+.button{
+    float: right;
+}
+
+.button button{
+    margin: 5px;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.announcement-details{
+    margin: 50px 50px 50px 50px;
+}
+
+footer{
+    position: fixed;
+    background-color: #800000;
+    padding: 10px 0px;
+    text-align: center;
+    font-style: italic;
+    bottom: 0;
+    width: 100%;
+    color: white;
+}

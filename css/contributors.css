@@ -1,0 +1,36 @@
+#contributors-container {
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contributors {
+    background-color: #ac6161;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 14px;
+    width: 250px;
+    text-align: center;
+}
+
+.contributors img{
+    display: block;
+    margin: auto;
+    width: 250px;
+    height: 250px;
+    object-fit: cover; 
+    border-radius: 8px;
+}
+
+.detail-label{
+    margin: 20px 0px 10px 0px;
+    font-weight: bold;
+}
+
+.detail-desc{
+    font-size: 0.8rem;
+}
+
